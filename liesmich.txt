@@ -1,0 +1,44 @@
+Mit der Date "Application.R" können die SVR- und SVC-Modelle auf einen Datensatz angewendet werden, der als csv-Datei vorliegt.
+Die Stellgrößen werden für die SVR vorbearbeitet und anschließend als rds- und csv-Datei ausgegeben.
+Im Folgenden wird die Anwendung beschrieben. Die Zeilen des Skripts können chronologisch ausgeführt werden.
+------------------------------------------------------
+1.) Öffnen Sie das R Script "Application.R" im Ordner Code.
+1a.) Ggf. muss die Working Directory gesetzt werden. Hier wird der Oberordner, in der Ordner mit den Daten liegt, angegeben. (Hier: "C:/Users/User/Hauptseminar SVM/")
+2.) Nun muss die Library e1071 geladen werden.
+3.) Des Weiteren müssen die Funktionen preprocessing(), svm.regression() und svm.classification() geladen werden.
+4.) Nun wird das Verzeichnis eingegeben, in dem die csv-Datei mit den Stellgrößen liegt.
+5.) Des Weiteren werden die Verzeichnisse eingegeben, in denen die Modelle abliegen. (Default: "./Model/Regression/" und "./Model/Classification/".)
+6.) Danach werden die vorherzusagenden Leistungskennzahlen als Vektor mit character-Werten eingegeben.
+6.) Anschließend werden die Stellgrößen vorbearbeitet und normiert.
+7.) Nun können die Funktionen zur Regression und Klassifikation ausgeführt werden.
+8) Die Vorhersagen werden im gleichen Ordner wie die Inputdaten als csv-Datei gespeichert.
+------------------------------------------------------
+Verzeichnisstruktur:
+
+Hauptseminar SVM
+- Code
+--- Application.R
+- Data
+--- csv-Datei
+--- rds-Dateien
+- Graphics
+--- Histogram
+- Model
+--- Classification
+--- Regression
+--- Evaluation
+------------------------------------------------------
+Die Modelle können mit Skript "Classification.R" und "Regression.R" berechnet werden.
+Für die Erstellung der Modelle müssen die Daten ggf. mit "Preprocessing.R" vorbearbeitet werden.
+Anschließend können die Modelle mit "Evaluation.R" ausgewertet werden.
+1.) Erstellen der Verzeichnisstruktur
+2.) Preprocessing.R
+3.) Classification.R
+4.) Regression.R
+5.) Application.R
+6.) Evaluation.R
+Weitere Informationen und eine Einführung in die SVM-Methode sind im Hauptseminar "Machine Learning - Support Vector Machines" gefunden werden.
+------------------------------------------------------
+Kontakt: Tobias Rummelsberger
+E-Mail: tobias.rummelsberger@tu-ilmenau.de
+Mobil: +49 157 89256742
